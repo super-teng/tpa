@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--指定当前配置文件与我们的VillageDao相互对应上 -->
+<mapper namespace="com.nefu.software.tpa.dao.VillageDao">
+    <select id="selectAll" resultType="Village">
+        SELECT * from village;
+    </select>
+    
+    <update id="updateVillage" parameterType="Village">
+        UPDATE village
+        <set>
+            <if test="vname != null and vname != ''">
+                vname = #{vname},
+            </if>
+            <if test="address != null and address != ''">
+                address = #{address},
+            </if>
+            <if test="population != null and population != ''">
+                population = #{population},
+            </if>
+            <if test="povertyCount != null and povertyCount != ''">
+                povertyCount = #{povertyCount},
+            </if>
+            <if test="gdp != null and gdp != ''">
+                gdp = #{gdp},
+            </if>
+            <if test="feature != null and feature != ''">
+                feature = #{feature},
+            </if>
+            <if test="vlevel != null and vlevel != ''">
+                vlevel = #{vlevel}
+            </if>
+        </set>
+        WHERE  vid = #{vid};
+    </update>
+</mapper>

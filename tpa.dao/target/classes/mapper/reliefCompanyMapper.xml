@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--指定当前配置文件与我们的ReliefCompanyDao相互对应上 -->
+<mapper namespace="com.nefu.software.tpa.dao.ReliefCompanyDao">
+
+    <!--通过用户名密码来进行查询 -->
+    <select id="searchByUAndP" parameterType="ReliefCompany" resultType="ReliefCompany">
+        SELECT * from reliefcompany WHERE username = #{username} AND password = #{password};
+    </select>
+
+    <!--插入一条单位信息 -->
+    <insert id="insertOneCompany" parameterType="ReliefCompany">
+      INSERT into reliefcompany VALUES (#{cid},#{username},#{password},#{cname},#{address},#{detail},#{telephone});
+    </insert>
+
+    <select id="selectAll" resultType="ReliefCompany">
+        SELECT * FROM reliefcompany;
+    </select>
+    <!--更新单位信息 -->
+    <update id="updateInformation" parameterType="ReliefCompany">
+      UPDATE reliefcompany
+      <set>
+          <if test="username != null and username != '' ">
+              username = #{username},
+          </if>
+          <if test="password != null and password != '' ">
+              password = #{password},
+          </if>
+          <if test="cname != null and cname != '' ">
+              cname = #{cname},
+          </if>
+          <if test="address != null and address != '' ">
+              address = #{address},
+          </if>
+          <if test="detail != null and detail != '' ">
+              detail = #{detail},
+          </if>
+          <if test="telephone != null and telephone != '' ">
+              telephone = #{telephone}
+          </if>
+      </set>
+        WHERE telephone = #{telephone};
+    </update>
+
+</mapper>

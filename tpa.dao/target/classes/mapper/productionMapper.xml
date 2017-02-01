@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--指定当前配置文件与我们的ProductionDao相互对应上 -->
+<mapper namespace="com.nefu.software.tpa.dao.ProductionDao">
+    <!--插入一条数据 -->
+    <insert id="insertProduction" parameterType="Production">
+        INSERT INTO production VALUES (#{proId},#{reliefFlag},#{povertyFlag},#{rid},#{pid},#{pName},#{detail},#{duration},#{checkDetail},#{submitTime})
+    </insert>
+
+    <!--查询全部扶贫项目 -->
+    <select id="selectAll" resultType="Production">
+        SELECT * FROM production order by submittime DESC;
+    </select>
+    
+    <!--查询扶贫项目通过ID -->
+    <select id="searchByUserId" parameterType="Integer" resultType="Production">
+        SELECT * from production where rid = #{id};
+    </select>
+
+    <!--更新项目通过状态 -->
+    <update id="updatePass" parameterType="Production">
+        UPDATE production SET checkDetail = #{checkDetail} where proId = #{proId};
+    </update>
+
+    <!--查询当前的扶贫项目通过用户ID和表示来查询 -->
+    <select id="searchProduction" resultType="Production">
+        SELECT * FROM production WHERE  rid = #{userId} AND reliefFlag = #{flag};
+    </select>
+
+    <!--更新扶贫项目 -->
+    <update id="updateProduction" parameterType="Production">
+       update production 
+       <set>
+           <if test="detail != null and detail != '' ">
+               detail = #{detail},
+           </if>
+           <if test="duration != null and duration != ''">
+               duration = #{duration},
+           </if>
+           <if test="checkDetail != null and checkDetail != ''">
+               checkDetail = #{checkDetail},
+           </if>
+           <if test="povertyFlag != null and povertyFlag !=''">
+               povertyFlag = #{povertyFlag},
+           </if>
+           <if test="reliefFlag != null and reliefFlag != ''">
+               reliefFlag = #{reliefFlag},
+           </if>
+           <if test="rid != null and rid != ''">
+               rid = #{rid},
+           </if>
+           <if test="pid != null and pid != ''">
+               pid = #{pid},
+           </if>
+           <if test="submitTime != null and submitTime != ''">
+               submitTime = #{submitTime}
+           </if>
+           WHERE pName = #{pName};
+       </set>
+    </update>
+</mapper>

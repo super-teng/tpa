@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/tpa.iml" filepath="$PROJECT_DIR$/tpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tpa.admin/tpa.admin.iml" filepath="$PROJECT_DIR$/tpa.admin/tpa.admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tpa.dao/tpa.dao.iml" filepath="$PROJECT_DIR$/tpa.dao/tpa.dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tpa.entity/tpa.entity.iml" filepath="$PROJECT_DIR$/tpa.entity/tpa.entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tpa.user/tpa.user.iml" filepath="$PROJECT_DIR$/tpa.user/tpa.user.iml" />
+    </modules>
+  </component>
+</project>

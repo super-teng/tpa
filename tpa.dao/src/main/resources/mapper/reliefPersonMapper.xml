@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--指定当前配置文件与我们的ReliefPersonDao相互对应上 -->
+<mapper namespace="com.nefu.software.tpa.dao.ReliefPersonDao">
+
+    <!--通过用户名密码来进行查询 -->
+    <select id="selectByUAndP" parameterType="ReliefPerson" resultType="ReliefPerson">
+        SELECT * FROM reliefperson WHERE username = #{username} AND password = #{password};
+    </select>
+
+    <!--插入一条扶贫个人信息 -->
+    <insert id="insertOnePerson" parameterType="ReliefPerson">
+        INSERT INTO reliefperson VALUES (#{rid},#{username},#{password},#{realName},#{birth},#{address},#{job},#{incomeDetail},#{hasPovertyRelative},#{telephone});
+    </insert>
+
+    <!--查询全部信息 -->
+    <select id="selectAll" resultType="ReliefPerson">
+        SELECT * FROM reliefperson;
+    </select>
+    <!-- 更新扶贫个人信息-->
+    <update id="updateInformation" parameterType="ReliefPerson">
+        UPDATE reliefperson
+        <set>
+            <if test="username != null and username != '' ">
+                username = #{username},
+            </if>
+            <if test="password != null and password != '' ">
+                password = #{password},
+            </if>
+            <if test="realName != null and realName != '' ">
+                realName = #{realName},
+            </if>
+            <if test="birth != null and birth != '' ">
+                birth = #{birth},
+            </if>
+            <if test="address != null and address != '' ">
+                address = #{address},
+            </if>
+            <if test="job != null and job != '' ">
+                job = #{job},
+            </if>
+            <if test="incomeDetail != null and incomeDetail != '' ">
+                incomeDetail = #{incomeDetail},
+            </if>
+            <if test="hasPovertyRelative != null and hasPovertyRelative != ''">
+                hasPovertyRelative = #{hasPovertyRelative}
+            </if>
+        </set>
+        WHERE telephone = #{telephone};
+    </update>
+</mapper>

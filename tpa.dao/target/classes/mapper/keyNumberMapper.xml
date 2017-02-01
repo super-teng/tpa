@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nefu.software.tpa.dao.KeyNumberDao">
+
+    <!--通过用户名密码来查询数据 -->
+    <select id="searchByCandP" parameterType="KeyNumber" resultType="KeyNumber">
+      SELECT * FROM keynumber WHERE company = #{company} AND passkey =#{passkey};
+    </select>
+
+
+</mapper>

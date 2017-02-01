@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nefu.software.tpa.dao.AdminDao">
+
+    <!--通过用户名密码来查询数据 -->
+    <select id="searchByUAndP" parameterType="Admin" resultType="Admin">
+        SELECT * FROM admin WHERE #{username} = username AND #{password} = password;
+    </select>
+
+    <!--插入一条数据 -->
+    <insert id="insertOne" parameterType="Admin">
+      INSERT INTO admin VALUES (#{aid},#{username},#{password},#{company},#{passkey});
+    </insert>
+
+    <!--更新管理员信息 -->
+    <update id="updateAdmin" parameterType="Admin">
+        update admin
+        <set>
+            <if test="username != null and username != '' ">
+                username = #{username},
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
+            </if>
+            <if test="company != null and company != ''">
+                company = #{company},
+            </if>
+        </set>
+        WHERE passkey = #{passkey};
+    </update>
+
+</mapper>

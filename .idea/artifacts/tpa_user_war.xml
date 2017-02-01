@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tpa.user:war">
+    <output-path>$PROJECT_DIR$/tpa.user/target</output-path>
+    <root id="archive" name="user.war">
+      <element id="artifact" artifact-name="tpa.user:war exploded" />
+    </root>
+  </artifact>
+</component>

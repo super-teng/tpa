@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--指定当前配置文件与我们的PovertyDao相互对应上 -->
+<mapper namespace="com.nefu.software.tpa.dao.PovertyDao">
+    <select id="selectAll" resultType="Poverty">
+        SELECT * FROM poverty;
+    </select>
+
+    <update id="updatePoverty" parameterType="Poverty">
+        UPDATE poverty
+        <set>
+            <if test="pName != null and pName != ''">
+                pName = #{pName},
+            </if>
+            <if test="sex != null and sex != ''">
+                sex = #{sex},
+            </if>
+            <if test="birth != null and birth != ''">
+                birth = #{birth},
+            </if>
+            <if test="address != null and address != ''">
+                address = #{address},
+            </if>
+            <if test="hasIncome != null and hasIncome != ''">
+                hasIncome = #{hasIncome},
+            </if>
+            <if test="incomeDetail != null and incomeDetail != ''">
+                incomeDetail = #{incomeDetail},
+            </if>
+            <if test="job != null and job != ''">
+                job = #{job},
+            </if>
+            <if test="illness != null and illness != ''">
+                illness = #{illness},
+            </if>
+            <if test="povertyReason != null and povertyReason != ''">
+                povertyReason = #{povertyReason},
+            </if>
+            <if test="pLevel != null and pLevel != ''">
+                pLevel = #{pLevel}
+            </if>
+            where pid  =#{pid};
+        </set>
+    </update>
+</mapper>

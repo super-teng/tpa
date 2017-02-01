@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+	   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+    <!--配置注解扫描 -->
+    <context:component-scan base-package="com.nefu.software.tpa.user.service"/>
+    <context:component-scan base-package="com.nefu.software.tpa.dao"/>
+
+    <!--加载配置文件 -->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+    <!--配置数据源 -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--配置事务管理器(需要通过数据源获得连接才能进行事务的具体管理)-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--使用注解的方式来进行事务的管理 ,使用cglib的形式来进行管理 -->
+    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+
+    <!--
+        配置mybatis相关信息
+    -->
+    <!--配置sqlsessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--配置数据源 -->
+        <property name="dataSource" ref="dataSource"/>
+        <!--mybatis配置文件位置路径 -->
+        <property name="configLocation" value="classpath:mybatis.xml"/>
+        <!--配置mapper映射文件位置，这样就不用再mybatis核心配置文件中一个一个配置了 -->
+        <property name="mapperLocations" value="classpath*:mapper/*Mapper.xml"/>
+        <!--配置实体类别名，这样在mapper文件中编写sql的时候就不用写全路径了 -->
+        <property name="typeAliasesPackage" value="com.nefu.software.tpa.entity.entity"/>
+    </bean>
+
+    <!--自动解析DAO接口文件，可以自动创建出相应的实现类，我们只需要针对接口写mapper就可以了 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.nefu.software.tpa.dao"/>
+    </bean>
+
+</beans>

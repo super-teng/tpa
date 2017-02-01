@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tpa.admin" />
+        <module name="tpa.dao" />
+        <module name="tpa.entity" />
+        <module name="tpa.user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tpa" target="1.5" />
+      <module name="tpa.admin" target="1.5" />
+      <module name="tpa.dao" target="1.5" />
+      <module name="tpa.entity" target="1.5" />
+      <module name="tpa.user" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nefu.software.tpa.dao.PlanLogDao">
+
+    <resultMap id="planLogMap" type="PlanLog">
+        <id property="lid" column="lid"/>
+        <result property="submitTime" column="submitTime"/>
+        <result property="logUrl" column="logUrl"/>
+        <association property="plan" column="planid" select="com.nefu.software.tpa.dao.PlanDao.searchPlanById"/>
+    </resultMap>
+
+    <!--插入扶贫日志 -->
+    <insert id="insertPlanLog" parameterType="PlanLog">
+        INSERT INTO planlog VALUES (#{lid},#{submitTime},#{logUrl},#{plan.planId})
+    </insert>
+
+
+    <select id="selectPlanLogById" parameterType="Integer" resultMap="planLogMap">
+        SELECT * FROM planlog WHERE planid = #{planid};
+    </select>
+
+</mapper>
