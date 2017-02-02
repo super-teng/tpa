@@ -63,4 +63,25 @@ public class ProductionServiceImpl implements ProductionService {
         Production production = productionDao.searchByUserId(id);
         return production;
     }
+
+    /**
+     * 通过用户ID和标记来查询当前项目
+     * @param userId 用户ID
+     * @param flag 用户标记
+     * @return
+     */
+    public Result searchByUserIdAndFlag(Integer userId,String flag) {
+        Result result = new Result();
+        Production production;
+        try{
+          production =  productionDao.searchProduction(userId,flag);
+        }catch (Exception e){
+            logger.error("扶贫项目searchByUserIdAndFlag DAO出现错误");
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setObject(production);
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
+        return result;
+    }
 }

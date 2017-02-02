@@ -33,13 +33,13 @@ public class RegisterServiceImpl implements RegisterService  {
      */
     public Result reliefPersonRegister(ReliefPerson reliefPerson) {
         Result result = new Result();
-        try {
+//        try {
             reliefPersonDao.insertOnePerson(reliefPerson);
-        }catch (Exception e){
-            logger.error("reliefPerson Dao 层出现错误");
-            result.setResultStatus(ResultStatus.FAILURE);
-            return result;
-        }
+//        }catch (Exception e){
+//            logger.error("reliefPerson Dao 层出现错误");
+//            result.setResultStatus(ResultStatus.FAILURE);
+//            return result;
+//        }
         result.setResultStatus(ResultStatus.SUCCESSFUL);
         return result;
     }

@@ -123,8 +123,19 @@ public class ProductionController {
      * @return
      */
     @RequestMapping("/toUpdateProduction")
-    public String toUpdateProduction(){
-        return "production/updateProduction";
+    public String toUpdateProduction(HttpServletRequest request){
+        Integer userId = (Integer) request.getSession().getAttribute("id");
+        Integer temp = (Integer) request.getSession().getAttribute("identity");
+        String flag = String.valueOf(temp-1);
+        Result result = productionService.searchByUserIdAndFlag(userId,flag);
+        if (result.getResultStatus().code == 3) {
+            return "reliefHome";
+        }else{
+            Production production = (Production) result.getObject();
+            logger.info("待更新的扶贫项目："+production.toString());
+            request.setAttribute("updateProduction",production);
+            return "production/updateProduction";
+        }
     }
 
     @RequestMapping("/updateProduction")
@@ -138,6 +149,7 @@ public class ProductionController {
             }
             return "production/updateProduction";
         }
+        Production updateProduction = (Production) request.getAttribute("updateProduction");
         //记录当前要扶贫对象的身份
         if(flag.equals("povertyFlag")){
             //扶贫个人
@@ -154,6 +166,7 @@ public class ProductionController {
         //存储扶贫人员ID
         production.setRid(Integer.parseInt(request.getSession().getAttribute("id").toString()));
         production.setCheckDetail("未审核");
+        production.setProId(production.getProId());
         logger.info(production.toString());
         //插入当前时间
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");

@@ -32,4 +32,12 @@ public interface ProductionService {
      * @return
      */
     public Production searchByRid(Integer id);
+
+    /**
+     * 通过用户ID和标记来查询当前项目
+     * @param userId 用户ID
+     * @param flag 用户标记
+     * @return
+     */
+    public Result searchByUserIdAndFlag(Integer userId,String flag);
 }

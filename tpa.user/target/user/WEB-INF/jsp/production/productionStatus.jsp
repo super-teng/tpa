@@ -20,7 +20,7 @@
             <h2>
             <%
                 if(!request.getSession().getAttribute("productionStatus").equals("通过")){
-                    out.println("<a href='toUpdateProduction'>更新当前项目状态</a>");
+                    out.println("<a href='toUpdateProduction'>更新当前扶贫项目</a>");
                 }
             %>
             </h2>

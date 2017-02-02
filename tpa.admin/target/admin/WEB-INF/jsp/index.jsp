@@ -26,6 +26,7 @@
         <p>
             <a href="toRegisterAdmin">管理员注册</a>
         </p>
+        <a href="http://localhost:8080/">扶贫用户登录页面</a>
     </form>
 </div>
 </body>

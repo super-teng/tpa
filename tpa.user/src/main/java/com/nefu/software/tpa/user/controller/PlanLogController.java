@@ -41,8 +41,16 @@ public class PlanLogController {
      * @return
      */
     @RequestMapping("/toUploadPlanLog")
-    public String toUploadPlanLog(){
-        return "planLog/uploadPlanLog";
+    public String toUploadPlanLog(HttpServletRequest request){
+        //用户ID
+        Integer userId  = (Integer) request.getSession().getAttribute("id");
+        logger.info(String.valueOf(userId));
+        Result result = planService.searchById(userId);
+        if(result.getResultStatus().code == 3){
+            return "reliefHome";
+        }else{
+            return "planLog/uploadPlanLog";
+        }
     }
 
     /**

@@ -2,63 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eeead18-7e3c-459a-95e4-a15fabfe1fe3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tpa.user/target/user/upload" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tpa.user/target/user/upload/IMG_8057.JPG" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/classes/com/nefu/software/tpa/admin/controller/LoginController.class" afterPath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/classes/com/nefu/software/tpa/admin/controller/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/lib/admin-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/lib/admin-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/lib/entity-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/lib/entity-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/lib/user-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/lib/user-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.entity/target/classes/com/nefu/software/tpa/entity/entity/PlanLog.class" afterPath="$PROJECT_DIR$/tpa.entity/target/classes/com/nefu/software/tpa/entity/entity/PlanLog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/controller/LoginController.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/controller/PlanController.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/controller/PlanController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.admin/target/classes/com/nefu/software/tpa/admin/controller/LoginController.class" afterPath="$PROJECT_DIR$/tpa.admin/target/classes/com/nefu/software/tpa/admin/controller/LoginController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/controller/PlanLogController.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/controller/PlanLogController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/PlanLogService.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/PlanLogService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/PlanService.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/PlanService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/impl/PlanLogServiceImpl.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/impl/PlanLogServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/impl/PlanServiceImpl.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/impl/PlanServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/controller/LoginController.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/controller/PlanController.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/controller/PlanController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/controller/ProductionController.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/controller/ProductionController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/ProductionService.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/ProductionService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/impl/ProductionServiceImpl.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/impl/ProductionServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/impl/RegisterServiceImpl.class" afterPath="$PROJECT_DIR$/tpa.user/target/classes/com/nefu/software/tpa/user/service/impl/RegisterServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/controller/PlanLogController.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/controller/PlanLogController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/PlanLogService.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/PlanLogService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/PlanService.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/PlanService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/impl/PlanLogServiceImpl.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/impl/PlanLogServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/impl/PlanServiceImpl.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/impl/PlanServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/controller/ProductionController.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/controller/ProductionController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/ProductionService.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/ProductionService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/impl/ProductionServiceImpl.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/impl/ProductionServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/impl/RegisterServiceImpl.class" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/classes/com/nefu/software/tpa/user/service/impl/RegisterServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/lib/entity-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/lib/entity-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/lib/user-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/lib/user-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planLogMapper.xml" afterPath="$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planLogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planMapper.xml" afterPath="$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.dao/target/classes/mapper/planLogMapper.xml" afterPath="$PROJECT_DIR$/tpa.dao/target/classes/mapper/planLogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.dao/target/classes/mapper/planMapper.xml" afterPath="$PROJECT_DIR$/tpa.dao/target/classes/mapper/planMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/PlanLog.java" afterPath="$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/PlanLog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/LoginController.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanController.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/controller/LoginController.java" afterPath="$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/controller/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.admin/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/tpa.admin/src/main/webapp/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/tpa.admin/target/admin/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/productionMapper.xml" afterPath="$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/productionMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.dao/target/classes/mapper/productionMapper.xml" afterPath="$PROJECT_DIR$/tpa.dao/target/classes/mapper/productionMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanLogController.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanLogController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/PlanLogService.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/PlanLogService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/PlanService.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/PlanService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanLogServiceImpl.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanLogServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanServiceImpl.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/informationManager/updateCompany.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/informationManager/updateCompany.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/informationManager/updatePerson.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/informationManager/updatePerson.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/plan/planInformation.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/plan/planInformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/planLog/uploadPlanLog.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/planLog/uploadPlanLog.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/applyForProduction.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/applyForProduction.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/ProductionController.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/ProductionController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/ProductionService.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/ProductionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/ProductionServiceImpl.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/ProductionServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/RegisterServiceImpl.java" afterPath="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/RegisterServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/productionStatus.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/productionStatus.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/updateProduction.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/updateProduction.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/register/reliefCompanyRegister.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/register/reliefCompanyRegister.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/register/reliefPersonRegister.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/register/reliefPersonRegister.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/search/povertyInformation.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/search/povertyInformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/search/villageInformation.jsp" afterPath="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/search/villageInformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/informationManager/updateCompany.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/informationManager/updateCompany.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/informationManager/updatePerson.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/informationManager/updatePerson.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/plan/planInformation.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/plan/planInformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/planLog/uploadPlanLog.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/planLog/uploadPlanLog.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/production/applyForProduction.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/production/applyForProduction.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/production/productionStatus.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/production/productionStatus.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/production/updateProduction.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/production/updateProduction.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/register/reliefCompanyRegister.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/register/reliefCompanyRegister.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/register/reliefPersonRegister.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/register/reliefPersonRegister.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/search/povertyInformation.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/search/povertyInformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/search/villageInformation.jsp" afterPath="$PROJECT_DIR$/tpa.user/target/user/WEB-INF/jsp/search/villageInformation.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/tpa.admin/target/" />
@@ -78,31 +53,53 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="PlanService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/PlanService.java">
+      <file leaf-file-name="PlanLogController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanLogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="360">
+              <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlanDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/java/com/nefu/software/tpa/dao/PlanDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reliefPersonRegister.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/register/reliefPersonRegister.jsp">
+      <file leaf-file-name="PlanController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="58" column="35" lean-forward="false" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+            <state relative-caret-position="557">
+              <caret line="42" column="9" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="42" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlanLog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/PlanLog.java">
+      <file leaf-file-name="ProductionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/ProductionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="498">
+              <caret line="168" column="49" lean-forward="false" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlanServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -111,8 +108,8 @@
       <file leaf-file-name="planMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="604">
+              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <marker date="1486032237360" expanded="true" signature="944:968" ph="select * fro... plan" />
                 <marker date="1486032237360" expanded="true" signature="944:991" ph="select * fro... plan" />
@@ -123,67 +120,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="povertyInformation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/search/povertyInformation.jsp">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tpa.admin/src/main/webapp/WEB-INF/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+            <state relative-caret-position="216">
+              <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="planLogMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planLogMapper.xml">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="68">
+              <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productionMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/productionMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-627">
+              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
-                <marker date="1486038586787" expanded="true" signature="691:775" ph="INSERT INTO planlog... " />
-                <marker date="1486038586787" expanded="true" signature="908:954" ph="SELECT * FRO... planlog" />
+                <marker date="1486040042345" expanded="true" signature="354:497" ph="INSERT INTO production... " />
+                <marker date="1486040042345" expanded="true" signature="594:643" ph="SELECT * FRO... production" />
+                <marker date="1486040042345" expanded="true" signature="776:818" ph="SELECT * fro... production" />
+                <marker date="1486040042345" expanded="true" signature="920:993" ph="UPDATE produ... " />
+                <marker date="1486040042345" expanded="true" signature="1111:1183" ph="SELECT * FRO... production" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="villageInformation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/search/villageInformation.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="57" column="27" lean-forward="false" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlanLogServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanLogServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlanLogService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/PlanLogService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginInService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/LoginInService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -211,23 +189,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/service/ReliefCompanyService.java" />
         <option value="$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/service/impl/ReliefCompanyServiceImpl.java" />
         <option value="$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/controller/ReliefCompanyController.java" />
         <option value="$PROJECT_DIR$/tpa.admin/src/main/webapp/WEB-INF/jsp/production/ProductionInformation.jsp" />
         <option value="$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/Test.java" />
         <option value="$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/T.java" />
         <option value="$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/Production.java" />
-        <option value="$PROJECT_DIR$/tpa.admin/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/tpa.admin/src/main/webapp/WEB-INF/jsp/production/noPass.jsp" />
-        <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/ProductionService.java" />
-        <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/ProductionController.java" />
-        <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/ProductionServiceImpl.java" />
         <option value="$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/service/ProductionService.java" />
         <option value="$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/service/impl/ProductionServiceImpl.java" />
         <option value="$PROJECT_DIR$/tpa.admin/src/main/webapp/WEB-INF/jsp/adminHome.jsp" />
-        <option value="$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/productionMapper.xml" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanService.java" />
         <option value="$PROJECT_DIR$/tpa.dao/src/main/java/com/nefu/software/tpa/dao/ProductionDao.java" />
         <option value="$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/service/PlanService.java" />
@@ -247,7 +218,6 @@
         <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanController.java" />
         <option value="$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/PlanLog.java" />
         <option value="$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planMapper.xml" />
-        <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanLogController.java" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/planLog/planLogInformation.jsp" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/informationManager/updateCompany.jsp" />
@@ -255,13 +225,21 @@
         <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/plan/planInformation.jsp" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/planLog/uploadPlanLog.jsp" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/applyForProduction.jsp" />
-        <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/productionStatus.jsp" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/updateProduction.jsp" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/register/reliefCompanyRegister.jsp" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/register/reliefPersonRegister.jsp" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/search/povertyInformation.jsp" />
         <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/search/villageInformation.jsp" />
         <option value="$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planLogMapper.xml" />
+        <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/RegisterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/productionStatus.jsp" />
+        <option value="$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/productionMapper.xml" />
+        <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/ProductionService.java" />
+        <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/ProductionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/ProductionController.java" />
+        <option value="$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanLogController.java" />
+        <option value="$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/tpa.admin/src/main/webapp/WEB-INF/jsp/index.jsp" />
       </list>
     </option>
   </component>
@@ -1096,6 +1074,170 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa.admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa.admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa.admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa.admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa.admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpa.admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -1670,12 +1812,12 @@
       <workItem from="1485866797622" duration="6537000" />
       <workItem from="1485912498509" duration="6031000" />
       <workItem from="1485918783857" duration="10718000" />
-      <workItem from="1486027032561" duration="8084000" />
+      <workItem from="1486027032561" duration="11280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58895000" />
+    <option name="totallyTimeSpent" value="62091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1687,36 +1829,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1698" height="1068" extended-state="7" />
+    <frame x="-9" y="-9" width="1698" height="1068" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16317734" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16317734" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37790054" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19337016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49944752" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33435962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.283867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1743,90 +1885,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/povertyMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1591">
-          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-          <folding>
-            <marker date="1485653016471" expanded="true" signature="316:337" ph="SELECT * FRO... poverty" />
-            <marker date="1485653016471" expanded="true" signature="418:432" ph="UPDATE pover... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3626">
-          <caret line="98" column="37" lean-forward="false" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/resources/spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.admin/src/main/resources/spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-960">
-          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.admin/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/java/com/nefu/software/tpa/dao/PovertyDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/java/com/nefu/software/tpa/dao/ProductionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/target/user/upload/IMG_7838.PNG" />
-    <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/keyNumberMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="9" />
-          <folding>
-            <marker date="1485582675904" expanded="true" signature="338:412" ph="SELECT * FRO... keynumber" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanLogService.java" />
     <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/java/com/nefu/software/tpa/dao/PlanLogDao.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1849,7 +1907,7 @@
         <state relative-caret-position="170">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
-            <element signature="e#2443#2444#0" expanded="true" />
+            <element signature="e#2443#2444#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1902,14 +1960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2995">
@@ -1922,22 +1972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3237">
           <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/ProductionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="162" column="37" lean-forward="false" selection-start-line="162" selection-start-column="36" selection-end-line="162" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1958,55 +1992,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/java/com/nefu/software/tpa/dao/PlanDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/Plan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2590">
-          <caret line="107" column="34" lean-forward="false" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanLogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="124" column="22" lean-forward="false" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="32" />
-          <folding>
-            <element signature="e#4882#4883#0" expanded="true" />
-            <element signature="e#4917#4918#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/informationManager/updateCompany.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/informationManager/updatePerson.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="56" column="31" lean-forward="false" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -2039,22 +2028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/productionStatus.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/updateProduction.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -2099,23 +2072,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <marker date="1486032237360" expanded="true" signature="944:968" ph="select * fro... plan" />
-            <marker date="1486032237360" expanded="true" signature="944:991" ph="select * fro... plan" />
-            <marker date="1486032237360" expanded="true" signature="1087:1206" ph="INSERT INTO plan... " />
-            <marker date="1486032237360" expanded="true" signature="1308:1351" ph="SELECT * fro... plan" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planLogMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding>
             <marker date="1486038586787" expanded="true" signature="691:775" ph="INSERT INTO planlog... " />
             <marker date="1486038586787" expanded="true" signature="908:954" ph="SELECT * FRO... planlog" />
@@ -2142,7 +2102,7 @@
     <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanLogServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2152,7 +2112,196 @@
     <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/PlanLogService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/ReliefPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/RegisterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/RegisterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/productionStatus.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="22" column="68" lean-forward="false" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/informationManager/updatePerson.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1776">
+          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/production/updateProduction.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/Plan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.entity/src/main/java/com/nefu/software/tpa/entity/entity/Production.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/java/com/nefu/software/tpa/dao/ProductionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/ProductionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/ProductionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="78" column="51" lean-forward="false" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="79" column="25" lean-forward="false" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/ProductionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="168" column="49" lean-forward="false" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/productionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-627">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <marker date="1486040042345" expanded="true" signature="354:497" ph="INSERT INTO production... " />
+            <marker date="1486040042345" expanded="true" signature="594:643" ph="SELECT * FRO... production" />
+            <marker date="1486040042345" expanded="true" signature="776:818" ph="SELECT * fro... production" />
+            <marker date="1486040042345" expanded="true" signature="920:993" ph="UPDATE produ... " />
+            <marker date="1486040042345" expanded="true" signature="1111:1183" ph="SELECT * FRO... production" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/java/com/nefu/software/tpa/dao/PlanDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="42" column="9" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="42" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/service/impl/PlanServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/java/com/nefu/software/tpa/user/controller/PlanLogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.dao/src/main/resources/mapper/planMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <marker date="1486032237360" expanded="true" signature="944:968" ph="select * fro... plan" />
+            <marker date="1486032237360" expanded="true" signature="944:991" ph="select * fro... plan" />
+            <marker date="1486032237360" expanded="true" signature="1087:1206" ph="INSERT INTO plan... " />
+            <marker date="1486032237360" expanded="true" signature="1308:1351" ph="SELECT * fro... plan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.user/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.admin/src/main/java/com/nefu/software/tpa/admin/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpa.admin/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
           <folding />
         </state>
       </provider>

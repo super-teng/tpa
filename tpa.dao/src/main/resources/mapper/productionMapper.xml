@@ -25,7 +25,7 @@
         UPDATE production SET checkDetail = #{checkDetail} where proId = #{proId};
     </update>
 
-    <!--查询当前的扶贫项目通过用户ID和表示来查询 -->
+    <!--查询当前的扶贫项目通过用户ID和标记来查询 -->
     <select id="searchProduction" resultType="Production">
         SELECT * FROM production WHERE  rid = #{userId} AND reliefFlag = #{flag};
     </select>
@@ -34,6 +34,9 @@
     <update id="updateProduction" parameterType="Production">
        update production 
        <set>
+           <if test="pName != null and pName != '' ">
+               pName = #{pName},
+           </if>
            <if test="detail != null and detail != '' ">
                detail = #{detail},
            </if>
@@ -58,7 +61,7 @@
            <if test="submitTime != null and submitTime != ''">
                submitTime = #{submitTime}
            </if>
-           WHERE pName = #{pName};
+           WHERE proId = #{proId};
        </set>
     </update>
 </mapper>
