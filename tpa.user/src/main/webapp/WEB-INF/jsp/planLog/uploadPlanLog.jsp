@@ -17,11 +17,13 @@
         </p>
         <form action="uploadPlanLog" method="post" enctype="multipart/form-data">
             <p>
+                详细信息：<input type="text" name="detail">
                 文件：<input type="file" name="file"/>
             </p>
             <p>
                 <input type="submit">
             </p>
+            <a href="returnHome">返回上一层</a>
         </form>
     </div>
 </body>

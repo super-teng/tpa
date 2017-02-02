@@ -27,7 +27,10 @@
             <tr><td>${plan.pName}</td> <td><%=type%></td> <td>${plan.povertyId}</td> <td>${plan.detail}</td> <td>${plan.duration}</td> <td>${plan.beginTime}</td> </tr>
         </table>
         <p>
-            <a href="searchPlanLog?planId=${plan.planId}">查看扶贫日志</a>
+            <a href="searchPlanLog?pageNumber=1">查看扶贫日志</a>
+        </p>
+        <p>
+            <a href="returnHome">返回上一层</a>
         </p>
     </div>
 </body>

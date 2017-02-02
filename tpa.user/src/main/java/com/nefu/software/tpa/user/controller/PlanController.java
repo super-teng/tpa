@@ -4,6 +4,7 @@ import com.nefu.software.tpa.entity.entity.Plan;
 import com.nefu.software.tpa.entity.entity.Production;
 import com.nefu.software.tpa.entity.response.Result;
 import com.nefu.software.tpa.user.service.PlanService;
+import com.nefu.software.tpa.user.util.PageUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,8 @@ public class PlanController {
     public String toPlan(HttpServletRequest request){
         //用户ID
         Integer userId  = (Integer) request.getSession().getAttribute("id");
-        Result result = planService.searchByUserIdAndFlag(userId);
+        logger.info(String.valueOf(userId));
+        Result result = planService.searchById(userId);
         if(result.getResultStatus().code == 3){
             return "reliefHome";
         }else{

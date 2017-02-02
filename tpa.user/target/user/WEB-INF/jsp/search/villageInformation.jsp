@@ -55,6 +55,7 @@
                 out.println("<a href=searchVillage?pageNumber="+(pageUtil.getCurrentPage()+1)+">下一页</a>");
             }
         %>
+        <a href="returnHome">返回上一层</a>
     </div>
 </body>
 </html>

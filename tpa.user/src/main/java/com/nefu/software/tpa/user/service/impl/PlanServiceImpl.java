@@ -29,7 +29,7 @@ public class PlanServiceImpl implements PlanService {
      * @param reliefId
      * @return
      */
-    public Result searchByUserIdAndFlag(Integer reliefId) {
+    public Result searchById(Integer reliefId) {
         Result result = new Result();
         Plan plan;
         try{
@@ -39,8 +39,13 @@ public class PlanServiceImpl implements PlanService {
             result.setResultStatus(ResultStatus.FAILURE);
             return result;
         }
-        result.setResultStatus(ResultStatus.SUCCESSFUL);
-        result.setObject(plan);
-        return result;
+        if(plan == null){
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }else{
+            result.setResultStatus(ResultStatus.SUCCESSFUL);
+            result.setObject(plan);
+            return result;
+        }
     }
 }

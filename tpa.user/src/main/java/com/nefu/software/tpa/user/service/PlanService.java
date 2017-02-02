@@ -13,5 +13,5 @@ public interface PlanService {
      * @param reliefId
      * @return
      */
-    public Result searchByUserIdAndFlag(Integer reliefId);
+    public Result searchById(Integer reliefId);
 }

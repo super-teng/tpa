@@ -18,7 +18,7 @@
     </resultMap>
 
     <!--查询扶贫计划通过用户ID -->
-    <select id="searchPlan" parameterType="Integer" resultType="Plan">
+    <select id="searchPlan" parameterType="Integer" resultMap="planMap">
         select * from plan where reliefId = #{reliefId};
     </select>
 

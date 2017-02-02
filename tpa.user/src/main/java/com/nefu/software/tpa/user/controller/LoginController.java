@@ -122,4 +122,9 @@ public class LoginController {
         return "index";
     }
 
+    @RequestMapping("/returnHome")
+    public String returnHome(){
+        return "reliefHome";
+    }
+
 }

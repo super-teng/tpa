@@ -16,4 +16,11 @@ public interface PlanLogService {
      */
     public Result insertPlanLog(PlanLog planLog);
 
+    /**
+     * 查询当前扶贫计划的扶贫日志
+     * @param planId
+     * @return
+     */
+    public Result searchPlanLog(Integer planId);
+
 }

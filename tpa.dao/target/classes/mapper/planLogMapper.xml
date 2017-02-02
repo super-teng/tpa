@@ -9,15 +9,16 @@
         <id property="lid" column="lid"/>
         <result property="submitTime" column="submitTime"/>
         <result property="logUrl" column="logUrl"/>
+        <result property="detail" column="detail"/>
         <association property="plan" column="planid" select="com.nefu.software.tpa.dao.PlanDao.searchPlanById"/>
     </resultMap>
 
     <!--插入扶贫日志 -->
     <insert id="insertPlanLog" parameterType="PlanLog">
-        INSERT INTO planlog VALUES (#{lid},#{submitTime},#{logUrl},#{plan.planId})
+        INSERT INTO planlog VALUES (#{lid},#{submitTime},#{logUrl},#{plan.planId},#{detail})
     </insert>
 
-
+    <!--通过ID来进行查询工作日志 -->
     <select id="selectPlanLogById" parameterType="Integer" resultMap="planLogMap">
         SELECT * FROM planlog WHERE planid = #{planid};
     </select>

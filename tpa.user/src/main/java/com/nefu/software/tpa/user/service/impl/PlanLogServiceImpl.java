@@ -40,4 +40,13 @@ public class PlanLogServiceImpl implements PlanLogService {
         result.setResultStatus(ResultStatus.SUCCESSFUL);
         return result;
     }
+
+    /**
+     * 查询当前扶贫计划的扶贫日志
+     * @param planId
+     * @return
+     */
+    public Result searchPlanLog(Integer planId) {
+        return null;
+    }
 }
