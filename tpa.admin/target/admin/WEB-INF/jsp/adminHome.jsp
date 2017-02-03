@@ -32,10 +32,10 @@
             <a href="toProduction?pageNumber=1">项目审核</a>
         </p>
         <p>
-            <a href="">帮扶结对管理</a>
+            <a href="toPR?pageNumber=1">帮扶结对管理</a>
         </p>
         <p>
-            <a href="">帮扶计划跟踪</a>
+            <a href="toPlan?pageNumber=1">帮扶计划跟踪</a>
         </p>
         <a href="logout">退出</a>
     </div>

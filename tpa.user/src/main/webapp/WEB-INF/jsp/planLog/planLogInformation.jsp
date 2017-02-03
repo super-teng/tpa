@@ -35,7 +35,7 @@
             <td><%=planLog.getLid()%></td>
             <td><%=planLog.getSubmitTime()%></td>
             <td><%=planLog.getDetail()%></td>
-            <td><a href="downLoadPlanLog?url=<%=planLog.getLogUrl()%>">下载</a> </td>
+            <td><a href="downLoadPlanLog?url=<%=planLog.getLogUrl()%>">下载附件</a> </td>
         </tr>
         <%}%>
     </table>

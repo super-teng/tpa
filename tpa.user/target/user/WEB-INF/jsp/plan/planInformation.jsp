@@ -16,19 +16,30 @@
         <table border="1">
             <%
                 Plan plan = (Plan) request.getSession().getAttribute("plan");
-                String type;
+                String povertyFlag;
                 if(plan.getPovertyFlag().equals("0")){
-                    type = "扶贫个人";
+                    povertyFlag = "扶贫个人";
                 }else{
-                    type = "自然村";
+                    povertyFlag = "自然村";
+                }
+                String reliefFlag = "扶贫单位";
+                if(plan.getReliefFlag().equals("0")){
+                    reliefFlag = "扶贫个人";
                 }
             %>
-            <tr><td>计划名称</td><td>扶贫类型</td><td>扶贫编号</td><td>计划内容</td><td>计划持续时间</td><td>计划开始时间</td></tr>
-            <tr><td>${plan.pName}</td> <td><%=type%></td> <td>${plan.povertyId}</td> <td>${plan.detail}</td> <td>${plan.duration}</td> <td>${plan.beginTime}</td> </tr>
+            <tr><td>计划名称</td><td>计划内容</td><td>计划持续时间</td><td>计划开始时间</td><td>贫困类型</td><td>贫困对象编号</td><td>扶贫类型</td><td>扶贫编号</td><td>扶贫日志</td></tr>
+            <tr>
+                <td>${plan.pName}</td>
+                <td>${plan.detail}</td>
+                <td>${plan.duration}</td>
+                <td>${plan.beginTime}</td>
+                <td><%=povertyFlag%></td>
+                <td>${plan.povertyId}</td>
+                <td>${plan.reliefId}</td>
+                <td><%=reliefFlag%></td>
+                <td><a href="searchPlanLog?pageNumber=1">查看扶贫日志</a></td>
+            </tr>
         </table>
-        <p>
-            <a href="searchPlanLog?pageNumber=1">查看扶贫日志</a>
-        </p>
         <p>
             <a href="returnHome">返回上一层</a>
         </p>

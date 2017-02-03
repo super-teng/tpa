@@ -8,9 +8,9 @@ public class PR {
     private Integer prId;
     private String pFlag;//帮扶主体标记，0为扶贫个人，1为扶贫单位
     private String rFlag;//贫困人员标记，0为贫困户，1为自然村
-    private Object poverty;//贫困类，具体是贫困人员还是自然村根据上面的判断
-    private Object relief;//扶贫类，具体是扶贫人员还是扶贫机构局根据上面的判断
-    private Plan plan;//对应的扶贫计划
+    private Integer rid;//扶贫ID
+    private Integer pid;//贫困ID
+    private Integer planId;//扶贫计划ID
 
     public Integer getPrId() {
         return prId;
@@ -36,27 +36,39 @@ public class PR {
         this.rFlag = rFlag;
     }
 
-    public Object getPoverty() {
-        return poverty;
+    public Integer getRid() {
+        return rid;
     }
 
-    public void setPoverty(Object poverty) {
-        this.poverty = poverty;
+    public void setRid(Integer rid) {
+        this.rid = rid;
     }
 
-    public Object getRelief() {
-        return relief;
+    public Integer getPid() {
+        return pid;
     }
 
-    public void setRelief(Object relief) {
-        this.relief = relief;
+    public void setPid(Integer pid) {
+        this.pid = pid;
     }
 
-    public Plan getPlan() {
-        return plan;
+    public Integer getPlanId() {
+        return planId;
     }
 
-    public void setPlan(Plan plan) {
-        this.plan = plan;
+    public void setPlanId(Integer planId) {
+        this.planId = planId;
+    }
+
+    @Override
+    public String toString() {
+        return "PR{" +
+                "prId=" + prId +
+                ", pFlag='" + pFlag + '\'' +
+                ", rFlag='" + rFlag + '\'' +
+                ", rid=" + rid +
+                ", pid=" + pid +
+                ", planId=" + planId +
+                '}';
     }
 }

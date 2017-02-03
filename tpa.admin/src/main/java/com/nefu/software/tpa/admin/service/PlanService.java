@@ -15,4 +15,17 @@ public interface PlanService {
      * @return
      */
     public Result insertPlan(Plan plan);
+
+    /**
+     * 查询全部扶贫计划
+     * @return
+     */
+    public Result searchAllPlan();
+
+    /**
+     * 通过扶贫主体ID和标记来查询扶贫计划
+     * @return
+     */
+    public Result searchPlanByIdAndFlag(Plan plan);
+
 }

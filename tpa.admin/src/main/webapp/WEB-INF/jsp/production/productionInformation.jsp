@@ -23,11 +23,19 @@
             PageUtil pageUtil = (PageUtil) request.getSession().getAttribute("PageUtil");
             List<Production> list = pageUtil.getList();
         %>
-        <tr><td>扶贫项目ID</td><td>项目名称</td><td>项目内容</td><td>项目持续时间</td><td>审核情况</td><td>贫困人员标记</td><td>帮扶主体标记</td><td>扶贫人士ID</td><td>贫困人士ID</td><td>提交时间</td><td>通过</td><td>未通过</td></tr>
+        <tr><td>扶贫项目ID</td><td>项目名称</td><td>项目内容</td><td>项目持续时间</td><td>审核情况</td><td>贫困人士ID</td><td>贫困人员标记</td><td>扶贫人士ID</td><td>帮扶主体标记</td><td>提交时间</td><td>通过</td><td>未通过</td></tr>
         <%
 
             for(int i=pageUtil.getFromIndex();i<pageUtil.getToIndex();i++){
                 Production production = list.get(i);
+                String povertyFlag = "自然村";
+                if(production.getPovertyFlag().equals("0")){
+                    povertyFlag = "贫困个人";
+                }
+                String reliefFlag = "扶贫单位";
+                if(production.getReliefFlag().equals("0")){
+                    reliefFlag = "扶贫个人";
+                }
         %>
 
         <tr>
@@ -36,10 +44,10 @@
             <td><%=production.getDetail()%></td>
             <td><%=production.getDuration()%></td>
             <td><%=production.getCheckDetail()%></td>
-            <td><%=production.getPovertyFlag()%></td>
-            <td><%=production.getReliefFlag()%></td>
-            <td><%=production.getRid()%></td>
             <td><%=production.getPid()%></td>
+            <td><%=povertyFlag%></td>
+            <td><%=production.getRid()%></td>
+            <td><%=reliefFlag%></td>
             <td><%=production.getSubmitTime()%></td>
             <%
                 boolean result = true;

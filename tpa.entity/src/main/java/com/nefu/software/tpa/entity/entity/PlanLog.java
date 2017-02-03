@@ -10,7 +10,7 @@ public class PlanLog {
     private Integer lid;
     private Date submitTime;//日志提交时间
     private String detail;//日志详细信息
-    private String logUrl;//日志详细信息，数据库是text类型进行存储
+    private String logUrl;//日志附件url
     private Plan plan;//当前日志属于哪个计划
 
     public Integer getLid() {

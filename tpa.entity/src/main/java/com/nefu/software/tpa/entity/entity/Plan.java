@@ -16,6 +16,7 @@ public class Plan {
     private String duration;//计划持续时间
     private Date beginTime;//计划开始时间
     private Integer reliefId;//帮扶主体ID
+    private String reliefFlag;//扶贫主体标记
     private List<PlanLog> list;//扶贫日志
 
     public Plan() {
@@ -94,6 +95,14 @@ public class Plan {
         this.list = list;
     }
 
+    public String getReliefFlag() {
+        return reliefFlag;
+    }
+
+    public void setReliefFlag(String reliefFlag) {
+        this.reliefFlag = reliefFlag;
+    }
+
     @Override
     public String toString() {
         return "Plan{" +
@@ -105,6 +114,7 @@ public class Plan {
                 ", duration='" + duration + '\'' +
                 ", beginTime=" + beginTime +
                 ", reliefId=" + reliefId +
+                ", reliefFlag='" + reliefFlag + '\'' +
                 ", list=" + list +
                 '}';
     }

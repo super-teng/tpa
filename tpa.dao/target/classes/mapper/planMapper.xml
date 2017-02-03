@@ -14,21 +14,33 @@
         <result property="duration" column="duration"/>
         <result property="beginTime" column="beginTime"/>
         <result property="reliefId" column="reliefId"/>
+        <result property="reliefFlag" column="reliefFlag"/>
         <collection property="list" column="planId" select="com.nefu.software.tpa.dao.PlanLogDao.selectPlanLogById"/>
     </resultMap>
 
-    <!--查询扶贫计划通过用户ID -->
+    <!--过用户ID查询扶贫计划通 -->
     <select id="searchPlan" parameterType="Integer" resultMap="planMap">
         select * from plan where reliefId = #{reliefId};
     </select>
 
     <!--插入一条扶贫计划 -->
     <insert id="insertPlan" parameterType="Plan">
-        INSERT INTO plan VALUES (#{planId},#{pName},#{detail},#{duration},#{beginTime},#{povertyFlag},#{povertyId},#{reliefId});
+        INSERT INTO plan VALUES (#{planId},#{pName},#{detail},#{duration},#{beginTime},#{povertyFlag},#{povertyId},#{reliefId},#{reliefFlag});
     </insert>
 
+    <!--通过主键ID查询扶贫计划 -->
     <select id="searchPlanById" parameterType="Integer" resultMap="planMap">
         SELECT * from plan WHERE planid = #{planid};
+    </select>
+
+    <!--查询全部扶贫计划 -->
+    <select id="searchAll" resultMap="planMap">
+        SELECT * FROM plan;
+    </select>
+
+    <!--通过扶贫计划ID和标记来查询扶贫计划 -->
+    <select id="searchPlanByIdAndFlag" parameterType="Plan" resultType="Plan">
+        SELECT * FROM plan WHERE reliefId = #{reliefId} AND reliefFlag = #{reliefFlag};
     </select>
 
 </mapper>

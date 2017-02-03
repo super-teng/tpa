@@ -1,7 +1,9 @@
 package com.nefu.software.tpa.admin.controller;
 
+import com.nefu.software.tpa.admin.service.PRService;
 import com.nefu.software.tpa.admin.service.PlanService;
 import com.nefu.software.tpa.admin.service.ProductionService;
+import com.nefu.software.tpa.entity.entity.PR;
 import com.nefu.software.tpa.entity.entity.Plan;
 import com.nefu.software.tpa.entity.entity.Production;
 import com.nefu.software.tpa.entity.response.Result;
@@ -39,6 +41,11 @@ public class ProductionController {
     @Autowired
     public PlanService planService;
 
+    @Autowired
+    public PRService prService;
+
+
+
     /**
      * 跳至扶贫项目页面
      * @param request 请求
@@ -66,6 +73,13 @@ public class ProductionController {
         }
     }
 
+    /**
+     * 扶贫项目通过
+     * @param index 项目索引
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("/passProduction")
     public String passProduction(@RequestParam Integer index, HttpServletRequest request, HttpServletResponse response){
         logger.info("验证通过的项目索引"+index);
@@ -81,9 +95,26 @@ public class ProductionController {
         plan.setPovertyFlag(passProduction.getPovertyFlag());
         plan.setPovertyId(passProduction.getPid());
         plan.setReliefId(passProduction.getRid());
+        plan.setReliefFlag(passProduction.getReliefFlag());
         Result result1 = planService.insertPlan(plan);
         logger.info(passProduction.toString());
         passProduction.setCheckDetail("通过");
+        Result result2 = planService.searchPlanByIdAndFlag(plan);
+        if(result2.getResultStatus().code == 3){
+            return "production/productionInformation";
+        }else{
+            Plan plan1 = (Plan) result2.getObject();
+            PR pr = new PR();
+            pr.setrFlag(plan.getReliefFlag());
+            pr.setpFlag(plan.getPovertyFlag());
+            pr.setPid(plan.getPovertyId());
+            pr.setRid(plan.getReliefId());
+            pr.setPlanId(plan1.getPlanId());
+            Result result3 = prService.insertPR(pr);
+            if(result3.getResultStatus().code == 3){
+                return "production/productionInformation";
+            }
+        }
         Result result = productionService.passProduction(passProduction);
         if(result.getResultStatus().code == 3 || result1.getResultStatus().code == 3){
             return "production/productionInformation";
@@ -93,12 +124,26 @@ public class ProductionController {
         }
     }
 
+    /**
+     * 跳至未通过扶贫项目页面
+     * @param modelMap
+     * @param index
+     * @return
+     */
     @RequestMapping("/toNoPassProduction")
     public String toNoPassProduction(ModelMap modelMap,@RequestParam String index){
         modelMap.addAttribute("index",index);
         return "production/noPass";
     }
 
+    /**
+     * 扶贫项目未通过
+     * @param index
+     * @param reason
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("/noPass")
     public String noPassProduction(@RequestParam Integer index,@RequestParam String reason, HttpServletRequest request, HttpServletResponse response){
         logger.info("验证未通过的项目索引"+index);

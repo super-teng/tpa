@@ -126,6 +126,13 @@ public class PlanLogController {
         return "planLog/planLogInformation";
     }
 
+    /**
+     * 下载扶贫日志
+     * @param url 扶贫日志地址
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("/downLoadPlanLog")
     public String downloadPlanLog(@RequestParam String url, HttpServletRequest request, HttpServletResponse response){
         response.setContentType("text/html;charset=utf-8");

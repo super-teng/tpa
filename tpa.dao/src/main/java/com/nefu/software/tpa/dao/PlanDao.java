@@ -5,6 +5,8 @@ import com.nefu.software.tpa.entity.entity.Production;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * 扶贫计划DAO
  *
@@ -27,5 +29,16 @@ public interface PlanDao {
      */
     public void insertPlan(Plan plan);
 
+    /**
+     * 查询全部扶贫计划
+     * @return
+     */
+    public List<Plan> searchAll();
+
+    /**
+     * 通过扶贫ID和标记来查询扶贫计划
+     * @return
+     */
+    public Plan searchPlanByIdAndFlag(Plan plan);
 
 }

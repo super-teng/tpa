@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nefu.software.tpa.dao.PRDao">
+
+    <!--插入一条数据 -->
+    <insert id="insertPR" parameterType="PR">
+        INSERT INTO pr VALUES (#{prId},#{pFlag},#{rFlag},#{rid},#{pid},#{planId});
+    </insert>
+
+</mapper>
