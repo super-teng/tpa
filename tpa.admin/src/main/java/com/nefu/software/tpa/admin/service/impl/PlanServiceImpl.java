@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
+ * 扶贫计划
  * Created by Super腾 on 2017/1/31.
  */
 @Service
@@ -104,6 +105,44 @@ public class PlanServiceImpl implements PlanService {
         }
         result.setResultStatus(ResultStatus.SUCCESSFUL);
         result.setObject(plan);
+        return result;
+    }
+
+    /**
+     * 删除扶贫计划
+     * @param plan
+     * @return
+     */
+    public Result deletePlan(Plan plan) {
+        Result result = new Result();
+        try{
+            planDao.deletePlan(plan);
+        }catch (Exception e){
+            logger.error("扶贫计划deletePlan插入出现错误！");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
+        return result;
+    }
+
+    /**
+     * 删除扶贫计划通过主键
+     * @param id
+     * @return
+     */
+    public Result deletePlanById(Integer id) {
+        Result result = new Result();
+        try{
+            planDao.deletePlanById(id);
+        }catch (Exception e){
+            logger.error("扶贫计划deletePlanById插入出现错误！");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
         return result;
     }
 }

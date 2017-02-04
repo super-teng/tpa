@@ -13,18 +13,20 @@
     <!--保证requestmapping能进行正常使用，在handlermapping中能够找到这个映射方法 -->
     <mvc:annotation-driven/>
 
-    <!--拦截器配置 -->
-    <mvc:interceptors>
-        <mvc:interceptor>
-            <mvc:mapping path="/**"/>
-            <mvc:exclude-mapping path="/"/>
-            <mvc:exclude-mapping path="/login"/>
-            <mvc:exclude-mapping path="/vcode"/>
-            <mvc:exclude-mapping path="/reliefPersonRegister"/>
-            <mvc:exclude-mapping path="/reliefCompanyRegister"/>
-            <bean class="com.nefu.software.tpa.user.util.MyHandler"/>
-        </mvc:interceptor>
-    </mvc:interceptors>
+    <!--&lt;!&ndash;拦截器配置 &ndash;&gt;-->
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<mvc:exclude-mapping path="/"/>-->
+            <!--<mvc:exclude-mapping path="/login"/>-->
+            <!--<mvc:exclude-mapping path="/vcode"/>-->
+            <!--<mvc:exclude-mapping path="/reliefPersonRegister"/>-->
+            <!--<mvc:exclude-mapping path="/reliefCompanyRegister"/>-->
+            <!--<mvc:exclude-mapping path="/companyRegister"/>-->
+            <!--<bean class="com.nefu.software.tpa.user.util.MyHandler"/>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
+
     <!--注解扫描控制层 -->
     <context:component-scan base-package="com.nefu.software.tpa.user.controller"/>
     <context:component-scan base-package="com.nefu.software.tpa.user.util"/>

@@ -30,6 +30,11 @@
         SELECT * FROM production WHERE  rid = #{userId} AND reliefFlag = #{flag};
     </select>
 
+    <!--删除扶贫项目通过扶贫用户 -->
+    <delete id="deleteProduction" parameterType="Production">
+        DELETE FROM production WHERE rid = #{rid};
+    </delete>
+
     <!--更新扶贫项目 -->
     <update id="updateProduction" parameterType="Production">
        update production 

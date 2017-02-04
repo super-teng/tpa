@@ -46,13 +46,33 @@ public class ProductionServiceImpl implements ProductionService {
 
     public Result passProduction(Production production) {
         Result result = new Result();
-//        try{
+        try{
             productionDao.updatePass(production);
-//        }catch (Exception e){
-//            logger.error("通过扶贫项目DAO出现错误");
-//            result.setResultStatus(ResultStatus.FAILURE);
-//            return result;
-//        }
+        }catch (Exception e){
+            logger.error("通过扶贫项目passProduction出现错误");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
+        return result;
+    }
+
+    /**
+     * 删除扶贫项目
+     * @param rid
+     * @return
+     */
+    public Result deleteProduction(Integer rid) {
+        Result result = new Result();
+        try{
+            productionDao.deleteProduction(rid);
+        }catch (Exception e){
+            logger.error("扶贫项目deleteProduction出现错误");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
         result.setResultStatus(ResultStatus.SUCCESSFUL);
         return result;
     }

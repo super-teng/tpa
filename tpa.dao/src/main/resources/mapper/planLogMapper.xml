@@ -23,4 +23,9 @@
         SELECT * FROM planlog WHERE planid = #{planid};
     </select>
 
+    <!--通过主键删除扶贫日志 -->
+    <delete id="deletePlanLog" parameterType="Integer">
+        DELETE FROM planlog WHERE lid = #{lid};
+    </delete>
+
 </mapper>

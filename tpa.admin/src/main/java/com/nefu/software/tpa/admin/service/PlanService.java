@@ -34,4 +34,19 @@ public interface PlanService {
      * @return
      */
     public Result searchById(Integer planId);
+
+    /**
+     * 删除扶贫计划
+     * @param plan
+     * @return
+     */
+    public Result deletePlan(Plan plan);
+
+    /**
+     * 删除扶贫计划通过主键
+     * @param id
+     * @return
+     */
+    public Result deletePlanById(Integer id);
+
 }

@@ -25,4 +25,9 @@ public interface PRDao {
      */
     public List<PR> selectAll();
 
+    /**
+     * 删除扶贫结对信息
+     * @param planId
+     */
+    public void deletePR(Integer planId);
 }

@@ -24,5 +24,12 @@ public interface ProductionService {
      */
     public Result passProduction(Production production);
 
+    /**
+     * 删除扶贫项目
+     * @param rid
+     * @return
+     */
+    public Result deleteProduction(Integer rid);
+
 
 }

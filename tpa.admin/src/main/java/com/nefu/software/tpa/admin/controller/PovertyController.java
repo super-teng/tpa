@@ -1,7 +1,11 @@
 package com.nefu.software.tpa.admin.controller;
 
+import com.nefu.software.tpa.admin.service.PlanService;
 import com.nefu.software.tpa.admin.service.PovertyService;
+import com.nefu.software.tpa.admin.service.ProductionService;
+import com.nefu.software.tpa.entity.entity.Plan;
 import com.nefu.software.tpa.entity.entity.Poverty;
+import com.nefu.software.tpa.entity.entity.Production;
 import com.nefu.software.tpa.entity.response.Result;
 import com.nefu.software.tpa.user.util.PageUtil;
 import org.slf4j.Logger;
@@ -30,6 +34,12 @@ public class PovertyController {
 
     @Autowired
     public PovertyService povertyService;
+
+    @Autowired
+    public PlanService planService;
+
+    @Autowired
+    public ProductionService productionService;
 
     /**
      * 调至贫困用户页面
@@ -95,11 +105,22 @@ public class PovertyController {
         }
     }
 
+    /**
+     * 跳至插入贫困个人页面
+     * @return
+     */
     @RequestMapping("/toInsertPoverty")
     public String toInsertPoverty(){
         return "poverty/insertPoverty";
     }
 
+    /**
+     * 插入贫困个人
+     * @param poverty
+     * @param bindingResult
+     * @param modelMap
+     * @return
+     */
     @RequestMapping("/insertPoverty")
     public String insertPoverty(@Valid Poverty poverty,BindingResult bindingResult,ModelMap modelMap){
         logger.info("待插入的贫困个人信息："+poverty.toString());
@@ -119,4 +140,21 @@ public class PovertyController {
             return "redirect:toPoverty?pageNumber=1";
         }
     }
+
+    /**
+     * 删除贫困个人
+     * @param request
+     * @param index
+     * @return
+     */
+    @RequestMapping("/toDeletePoverty")
+    public String toDeletePoverty(HttpServletRequest request,@RequestParam Integer index){
+        PageUtil pageUtil = (PageUtil) request.getSession().getAttribute("PageUtil");
+        List<Poverty> list = pageUtil.getList();
+        Poverty poverty = list.get(index);
+        int id = poverty.getPid();
+        povertyService.deletePoverty(id);
+        return "redirect:toPoverty?pageNumber=1";
+    }
+
 }

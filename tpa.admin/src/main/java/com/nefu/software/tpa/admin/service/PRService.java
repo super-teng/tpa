@@ -23,6 +23,13 @@ public interface PRService {
      */
     public Result selectAll();
 
+    /**
+     * 删除扶贫结对信息
+     * @param planId
+     * @return
+     */
+    public Result deletePR(Integer planId);
+
 
 
 }

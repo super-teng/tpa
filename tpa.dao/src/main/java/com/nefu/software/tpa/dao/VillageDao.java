@@ -30,4 +30,10 @@ public interface VillageDao {
      */
     public void insertVillage(Village village);
 
+    /**
+     * 删除自然村
+     * @param id
+     */
+    public void deleteVillage(Integer id);
+
 }

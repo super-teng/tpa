@@ -79,4 +79,23 @@ public class PovertyServiceImpl implements PovertyService {
         result.setResultStatus(ResultStatus.SUCCESSFUL);
         return result;
     }
+
+    /**
+     * 删除扶贫个人
+     * @param id
+     * @return
+     */
+    public Result deletePoverty(Integer id) {
+        Result result = new Result();
+        try{
+            povertyDao.deletePoverty(id);
+        }catch (Exception e){
+            logger.error("贫困个人deletePoverty出现错误");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
+        return result;
+    }
 }

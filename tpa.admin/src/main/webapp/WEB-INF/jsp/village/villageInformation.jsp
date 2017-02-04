@@ -22,7 +22,7 @@
             PageUtil pageUtil = (PageUtil) request.getSession().getAttribute("PageUtil");
             List<Village> list = pageUtil.getList();
         %>
-        <tr><td>自然村ID</td><td>自然村名称</td><td>地址</td><td>总人口</td><td>贫困人口</td><td>年生产总值</td><td>自然村特色</td><td>自然村贫困等级</td><td>修改</td></tr>
+        <tr><td>自然村ID</td><td>自然村名称</td><td>地址</td><td>总人口</td><td>贫困人口</td><td>年生产总值</td><td>自然村特色</td><td>自然村贫困等级</td><td>修改</td><td>删除</td></tr>
         <%
 
             for(int i=pageUtil.getFromIndex();i<pageUtil.getToIndex();i++){
@@ -39,6 +39,7 @@
             <td><%=village.getFeature()%></td>
             <td><%=village.getVlevel()%></td>
             <td><a href="toUpdateVillage?index=<%=i%>">修改</a> </td>
+            <td><a href="toDeleteVillage?index=<%=i%>">删除</a> </td>
         </tr>
         <%}%>
     </table>

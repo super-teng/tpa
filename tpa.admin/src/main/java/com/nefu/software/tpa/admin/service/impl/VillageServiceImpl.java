@@ -80,4 +80,23 @@ public class VillageServiceImpl implements VillageService {
         result.setResultStatus(ResultStatus.SUCCESSFUL);
         return result;
     }
+
+    /**
+     * 删除自然村信息
+     * @param vid
+     * @return
+     */
+    public Result deleteVillage(Integer vid) {
+        Result result = new Result();
+        try{
+            villageDao.deleteVillage(vid);
+        }catch (Exception e){
+            logger.error("自然村deleteVillage出现错误");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
+        return result;
+    }
 }

@@ -29,4 +29,11 @@ public interface VillageService {
      */
     public Result insertVillage(Village village);
 
+    /**
+     * 删除自然村信息
+     * @param vid
+     * @return
+     */
+    public Result deleteVillage(Integer vid);
+
 }

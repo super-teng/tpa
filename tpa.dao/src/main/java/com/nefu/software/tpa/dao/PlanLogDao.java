@@ -16,4 +16,10 @@ public interface PlanLogDao {
      */
     public void insertPlanLog(PlanLog planLog);
 
+    /**
+     * 删除扶贫计划日志
+     * @param lid
+     */
+    public void deletePlanLog(Integer lid);
+
 }

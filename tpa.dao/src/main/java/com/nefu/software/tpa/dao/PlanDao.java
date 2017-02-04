@@ -48,4 +48,16 @@ public interface PlanDao {
      */
     public Plan searchPlanById(Integer planId);
 
+    /**
+     * 删除扶贫计划
+     * @param plan
+     */
+    public void deletePlan(Plan plan);
+
+    /**
+     * 删除扶贫计划通过主键
+     * @param planId
+     */
+    public void deletePlanById(Integer planId);
+
 }

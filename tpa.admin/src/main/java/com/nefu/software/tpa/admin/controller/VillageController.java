@@ -1,6 +1,7 @@
 package com.nefu.software.tpa.admin.controller;
 
 import com.nefu.software.tpa.admin.service.VillageService;
+import com.nefu.software.tpa.entity.entity.Poverty;
 import com.nefu.software.tpa.entity.entity.Village;
 import com.nefu.software.tpa.entity.response.Result;
 import com.nefu.software.tpa.user.util.PageUtil;
@@ -75,6 +76,13 @@ public class VillageController {
         return "village/updateVillage";
     }
 
+    /**
+     * 更新自然村信息
+     * @param village
+     * @param bindingResult
+     * @param modelMap
+     * @return
+     */
     @RequestMapping("/updateVillage")
     public String updateVillage(@Valid Village village, BindingResult bindingResult, ModelMap modelMap){
         logger.info("需要修改的自然村类："+village.toString());
@@ -101,6 +109,13 @@ public class VillageController {
         return "village/insertVillage";
     }
 
+    /**
+     * 插入自然村
+     * @param village
+     * @param bindingResult
+     * @param modelMap
+     * @return
+     */
     @RequestMapping("insertVillage")
     public String insertVillage(@Valid Village village,BindingResult bindingResult,ModelMap modelMap){
         logger.info("需要新增的自然村类："+village.toString());
@@ -120,6 +135,22 @@ public class VillageController {
         }else{
             return "redirect:toVillage?pageNumber=1";
         }
+    }
+
+    /**
+     * 删除自然村
+     * @param request
+     * @param index
+     * @return
+     */
+    @RequestMapping("/toDeleteVillage")
+    public String toDeleteVillage(HttpServletRequest request,@RequestParam Integer index){
+        PageUtil pageUtil = (PageUtil) request.getSession().getAttribute("PageUtil");
+        List<Village> list = pageUtil.getList();
+        Village village = list.get(index);
+        int id = village.getVid();
+        villageService.deleteVillage(id);
+        return "redirect:toVillage?pageNumber=1";
     }
 
 }

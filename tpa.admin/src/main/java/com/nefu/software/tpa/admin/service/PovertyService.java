@@ -30,4 +30,11 @@ public interface PovertyService {
      */
     public Result insertPoverty(Poverty poverty);
 
+    /**
+     * 删除扶贫个人
+     * @param id
+     * @return
+     */
+    public Result deletePoverty(Integer id);
+
 }

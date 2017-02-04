@@ -31,4 +31,11 @@ public interface PovertyDao {
      */
     public void insertPoverty(Poverty poverty);
 
+    /**
+     * 删除扶贫个人
+     * @param pid
+     */
+    public void deletePoverty(Integer pid);
+
+
 }

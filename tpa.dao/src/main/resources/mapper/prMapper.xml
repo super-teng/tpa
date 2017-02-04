@@ -10,7 +10,13 @@
         INSERT INTO pr VALUES (#{prId},#{pFlag},#{rFlag},#{rid},#{pid},#{planId});
     </insert>
 
+    <!--查询全部数据 -->
     <select id="selectAll" resultType="PR">
         SELECT * FROM pr;
     </select>
+
+    <!--删除扶贫结对信息 -->
+    <delete id="deletePR" parameterType="Integer">
+      DELETE FROM pr WHERE planId = #{planId};
+    </delete>
 </mapper>

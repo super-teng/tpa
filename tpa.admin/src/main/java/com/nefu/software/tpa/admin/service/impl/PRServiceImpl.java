@@ -69,4 +69,23 @@ public class PRServiceImpl implements PRService{
         result.setObject(list);
         return result;
     }
+
+    /**
+     * 删除扶贫结对信息
+     * @param planId
+     * @return
+     */
+    public Result deletePR(Integer planId) {
+        Result result = new Result();
+        try{
+            prDao.deletePR(planId);
+        }catch (Exception e){
+            logger.error("帮扶结对deletePR出现错误!");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
+        return result;
+    }
 }

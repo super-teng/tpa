@@ -53,4 +53,11 @@ public interface ProductionDao {
      */
     public Production searchProduction(@Param("userId") Integer userId , @Param("flag") String flag);
 
+
+    /**
+     * 删除扶贫项目
+     * @param rid
+     */
+    public void deleteProduction(Integer rid);
+
 }

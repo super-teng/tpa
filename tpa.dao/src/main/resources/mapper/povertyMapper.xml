@@ -10,6 +10,10 @@
         SELECT * FROM poverty;
     </select>
 
+    <delete id="deletePoverty" parameterType="Integer">
+      DELETE from poverty where pid = #{pid};
+    </delete>
+
     <!--添加贫困用户 -->
     <insert id="insertPoverty" parameterType="Poverty">
       INSERT INTO poverty VALUES (#{pid},#{pName},#{sex},#{birth},#{address},#{hasIncome},#{incomeDetail},#{job},#{illness},#{povertyReason},#{pLevel},NULL);

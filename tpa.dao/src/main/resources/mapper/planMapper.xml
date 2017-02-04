@@ -23,6 +23,15 @@
         select * from plan where reliefId = #{reliefId};
     </select>
 
+    <!--删除扶贫计划 -->
+    <delete id="deletePlan" parameterType="Plan">
+        DELETE FROM plan WHERE povertyId = #{povertyId} AND povertyFlag = #{povertyFlag};
+    </delete>
+
+    <!--通过主键删除扶贫计划 -->
+    <delete id="deletePlanById" parameterType="Integer">
+        DELETE FROM plan WHERE planId = #{planId};
+    </delete>
     <!--插入一条扶贫计划 -->
     <insert id="insertPlan" parameterType="Plan">
         INSERT INTO plan VALUES (#{planId},#{pName},#{detail},#{duration},#{beginTime},#{povertyFlag},#{povertyId},#{reliefId},#{reliefFlag});

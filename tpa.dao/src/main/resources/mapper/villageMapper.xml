@@ -16,6 +16,11 @@
       INSERT INTO village VALUES (#{vid},#{vname},#{address},#{population},#{povertyCount},#{gdp},#{feature},#{vlevel});
     </insert>
 
+    <!--删除自然村 -->
+    <delete id="deleteVillage" parameterType="Integer">
+      DELETE FROM village WHERE vid = #{vid};
+    </delete>
+
     <!--更新自然村信息 -->
     <update id="updateVillage" parameterType="Village">
         UPDATE village
