@@ -61,4 +61,23 @@ public class VillageServiceImpl implements VillageService {
         result.setResultStatus(ResultStatus.SUCCESSFUL);
         return result;
     }
+
+    /**
+     * 插入自然村信息
+     * @param village
+     * @return
+     */
+    public Result insertVillage(Village village) {
+        Result result = new Result();
+        try{
+            villageDao.insertVillage(village);
+        }catch (Exception e){
+            logger.error("自然村insertVillage出现错误");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
+        return result;
+    }
 }

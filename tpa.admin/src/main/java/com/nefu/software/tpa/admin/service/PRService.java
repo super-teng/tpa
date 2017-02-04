@@ -17,4 +17,12 @@ public interface PRService {
      */
     public Result insertPR(PR pr);
 
+    /**
+     * 查找全部的扶贫结对类
+     * @return
+     */
+    public Result selectAll();
+
+
+
 }

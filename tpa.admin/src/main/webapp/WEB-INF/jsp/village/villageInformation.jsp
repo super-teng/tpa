@@ -42,6 +42,7 @@
         </tr>
         <%}%>
     </table>
+    <p>
     <%
         //上一页
         if(pageUtil.getCurrentPage()!=1){
@@ -56,7 +57,12 @@
             out.println("<a href=toVillage?pageNumber="+(pageUtil.getCurrentPage()+1)+">下一页</a>");
         }
     %>
-    <a href="toAdmin">返回上一层</a>
+        <a href="toInsertVillage">新增自然村信息</a>
+    </p>
+    <p>
+
+        <a href="toAdmin">返回上一层</a>
+    </p>
 </div>
 </body>
 </html>

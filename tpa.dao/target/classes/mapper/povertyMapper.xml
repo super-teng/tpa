@@ -5,10 +5,17 @@
 
 <!--指定当前配置文件与我们的PovertyDao相互对应上 -->
 <mapper namespace="com.nefu.software.tpa.dao.PovertyDao">
+    <!--查询全部贫困用户 -->
     <select id="selectAll" resultType="Poverty">
         SELECT * FROM poverty;
     </select>
 
+    <!--添加贫困用户 -->
+    <insert id="insertPoverty" parameterType="Poverty">
+      INSERT INTO poverty VALUES (#{pid},#{pName},#{sex},#{birth},#{address},#{hasIncome},#{incomeDetail},#{job},#{illness},#{povertyReason},#{pLevel},NULL);
+    </insert>
+
+    <!--更新贫困用户 -->
     <update id="updatePoverty" parameterType="Poverty">
         UPDATE poverty
         <set>

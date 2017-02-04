@@ -13,6 +13,17 @@
     <!--保证requestmapping能进行正常使用，在handlermapping中能够找到这个映射方法 -->
     <mvc:annotation-driven/>
 
+    <!--配置拦截器 -->
+    <mvc:interceptors>
+       <mvc:interceptor>
+           <mvc:mapping path="/**"/>
+           <mvc:exclude-mapping path="/admin"/>
+           <mvc:exclude-mapping path="/adminLogin"/>
+           <mvc:exclude-mapping path="/vcode"/>
+           <mvc:exclude-mapping path="/toRegisterAdmin"/>
+           <bean class="com.nefu.software.tpa.admin.util.MyIntercepter"/>
+       </mvc:interceptor>
+    </mvc:interceptors>
     <!--注解扫描控制层 -->
     <context:component-scan base-package="com.nefu.software.tpa.admin.controller"/>
 

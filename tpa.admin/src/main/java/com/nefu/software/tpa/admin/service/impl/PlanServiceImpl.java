@@ -85,4 +85,25 @@ public class PlanServiceImpl implements PlanService {
         result.setResultStatus(ResultStatus.SUCCESSFUL);
         return result;
     }
+
+    /**
+     * 通过扶贫计划ID来查询扶贫计划
+     * @param planId
+     * @return
+     */
+    public Result searchById(Integer planId) {
+        Result result = new Result();
+        Plan plan;
+        try{
+            plan = planDao.searchPlanById(planId);
+        }catch (Exception e){
+            logger.error("扶贫计划searchById出现错误！");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
+        result.setObject(plan);
+        return result;
+    }
 }

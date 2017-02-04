@@ -59,4 +59,8 @@ public class RegisterController {
         }
     }
 
+    @RequestMapping("/toAdminHome")
+    public String toAdminHome(){
+        return "adminHome";
+    }
 }

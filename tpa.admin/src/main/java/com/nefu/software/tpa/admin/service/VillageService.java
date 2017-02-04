@@ -22,4 +22,11 @@ public interface VillageService {
      */
     public Result updateVillage(Village village);
 
+    /**
+     * 插入自然村信息
+     * @param village
+     * @return
+     */
+    public Result insertVillage(Village village);
+
 }

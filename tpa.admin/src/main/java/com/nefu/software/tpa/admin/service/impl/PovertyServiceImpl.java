@@ -53,6 +53,26 @@ public class PovertyServiceImpl implements PovertyService {
             povertyDao.updatePoverty(poverty);
         }catch (Exception e){
             logger.error("贫困个人DAO出现错误!");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
+        return result;
+    }
+
+    /**
+     * 新增贫困个人信息
+     * @param poverty 贫困个人信息
+     * @return 包装类
+     */
+    public Result insertPoverty(Poverty poverty) {
+        Result result = new Result();
+        try{
+            povertyDao.insertPoverty(poverty);
+        }catch (Exception e){
+            logger.error("贫困个人insertPoverty出现错误!");
+            e.printStackTrace();
             result.setResultStatus(ResultStatus.FAILURE);
             return result;
         }

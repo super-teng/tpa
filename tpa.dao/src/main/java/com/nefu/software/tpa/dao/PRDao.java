@@ -3,6 +3,8 @@ package com.nefu.software.tpa.dao;
 import com.nefu.software.tpa.entity.entity.PR;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * 帮扶结对表
  *
@@ -16,5 +18,11 @@ public interface PRDao {
      * @param pr
      */
     public void insertPR(PR pr);
+
+    /**
+     * 查找全部的扶贫结对信息
+     * @return
+     */
+    public List<PR> selectAll();
 
 }

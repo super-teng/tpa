@@ -5,10 +5,18 @@
 
 <!--指定当前配置文件与我们的VillageDao相互对应上 -->
 <mapper namespace="com.nefu.software.tpa.dao.VillageDao">
+
+    <!--查询全部自然村信息 -->
     <select id="selectAll" resultType="Village">
         SELECT * from village;
     </select>
-    
+
+    <!--插入自然村信息 -->
+    <insert id="insertVillage" parameterType="Village">
+      INSERT INTO village VALUES (#{vid},#{vname},#{address},#{population},#{povertyCount},#{gdp},#{feature},#{vlevel});
+    </insert>
+
+    <!--更新自然村信息 -->
     <update id="updateVillage" parameterType="Village">
         UPDATE village
         <set>

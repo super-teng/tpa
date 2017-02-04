@@ -96,4 +96,30 @@ public class VillageController {
         }
     }
 
+    @RequestMapping("/toInsertVillage")
+    public String toInsertVillage(){
+        return "village/insertVillage";
+    }
+
+    @RequestMapping("insertVillage")
+    public String insertVillage(@Valid Village village,BindingResult bindingResult,ModelMap modelMap){
+        logger.info("需要新增的自然村类："+village.toString());
+        //假如出现错误
+        if(bindingResult.hasErrors()){
+            List<FieldError> list = bindingResult.getFieldErrors();
+            for(FieldError fieldError : list){
+                logger.info(fieldError.getField()+" : "+fieldError.getDefaultMessage());
+                modelMap.addAttribute("ERR_"+fieldError.getField(),fieldError.getDefaultMessage());
+            }
+            return "village/insertVillage";
+        }
+        //正确进行操作
+        Result result = villageService.insertVillage(village);
+        if(result.getResultStatus().code == 3){
+            return "village/insertVillage";
+        }else{
+            return "redirect:toVillage?pageNumber=1";
+        }
+    }
+
 }

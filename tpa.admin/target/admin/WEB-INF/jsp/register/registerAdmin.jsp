@@ -29,6 +29,9 @@
             <p>
                 <input type="submit"/>
             </p>
+            <p>
+                <a href="toAdminHome">返回上一层</a>
+            </p>
         </form>
     </div>
 

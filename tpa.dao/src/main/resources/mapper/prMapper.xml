@@ -10,4 +10,7 @@
         INSERT INTO pr VALUES (#{prId},#{pFlag},#{rFlag},#{rid},#{pid},#{planId});
     </insert>
 
+    <select id="selectAll" resultType="PR">
+        SELECT * FROM pr;
+    </select>
 </mapper>

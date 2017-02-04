@@ -27,6 +27,10 @@
 
             for(int i=pageUtil.getFromIndex();i<pageUtil.getToIndex();i++){
                 Poverty poverty = list.get(i);
+                String hasIncome = "没有";
+                if(poverty.isHasIncome()){
+                    hasIncome = "有";
+                }
         %>
 
         <tr>
@@ -35,7 +39,7 @@
             <td><%=poverty.getSex()%></td>
             <td><%=poverty.getBirth()%></td>
             <td><%=poverty.getAddress()%></td>
-            <td><%=poverty.isHasIncome()%></td>
+            <td><%=hasIncome%></td>
             <td><%=poverty.getIncomeDetail()%></td>
             <td><%=poverty.getJob()%></td>
             <td><%=poverty.getIllness()%></td>
@@ -45,6 +49,7 @@
         </tr>
         <%}%>
     </table>
+    <p>
     <%
         //上一页
         if(pageUtil.getCurrentPage()!=1){
@@ -59,7 +64,13 @@
             out.println("<a id = 'a3' href=toPoverty?pageNumber="+(pageUtil.getCurrentPage()+1)+">下一页</a>");
         }
     %>
-    <a href="toAdmin">返回上一层</a>
+
+        <a href="toInsertPoverty">新增贫困用户</a>
+    </p>
+    <p>
+        <a href="toAdmin">返回上一层</a>
+
+    </p>
 </div>
 </body>
 </html>

@@ -25,4 +25,10 @@ public interface PovertyDao {
      */
     public void updatePoverty(Poverty poverty);
 
+    /**
+     * 添加贫困用户
+     * @param poverty
+     */
+    public void insertPoverty(Poverty poverty);
+
 }

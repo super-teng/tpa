@@ -23,4 +23,11 @@ public interface PovertyService {
      */
     public Result updatePoverty(Poverty poverty);
 
+    /**
+     * 新增贫困个人信息
+     * @param poverty 贫困个人信息
+     * @return 包装类
+     */
+    public Result insertPoverty(Poverty poverty);
+
 }

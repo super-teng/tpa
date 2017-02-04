@@ -10,6 +10,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * 帮扶结对业务层
  *
@@ -23,6 +25,7 @@ public class PRServiceImpl implements PRService{
 
     @Autowired
     public PRDao prDao;
+
     /**
      * 插入扶贫结对类
      * @param pr
@@ -40,6 +43,30 @@ public class PRServiceImpl implements PRService{
             return result;
         }
         result.setResultStatus(ResultStatus.SUCCESSFUL);
+        return result;
+    }
+
+    /**
+     * 查找全部的扶贫结对类
+     * @return
+     */
+    public Result selectAll() {
+        Result result = new Result();
+        List<PR> list;
+        try{
+            list = prDao.selectAll();
+        }catch (Exception e){
+            logger.error("帮扶结对selectAll出现错误!");
+            e.printStackTrace();
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        if(list == null){
+            result.setResultStatus(ResultStatus.FAILURE);
+            return result;
+        }
+        result.setResultStatus(ResultStatus.SUCCESSFUL);
+        result.setObject(list);
         return result;
     }
 }

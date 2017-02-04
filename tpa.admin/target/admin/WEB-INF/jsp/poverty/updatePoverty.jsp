@@ -53,6 +53,7 @@
                 <input type="submit">
             </p>
         </form>
+        <a href="toPoverty?pageNumber=1">返回上一层</a>
     </div>
 </body>
 </html>

@@ -28,4 +28,10 @@ public interface PlanService {
      */
     public Result searchPlanByIdAndFlag(Plan plan);
 
+    /**
+     * 通过扶贫计划ID来查询扶贫计划
+     * @param planId
+     * @return
+     */
+    public Result searchById(Integer planId);
 }

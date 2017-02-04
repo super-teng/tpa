@@ -24,4 +24,10 @@ public interface VillageDao {
      */
     public void updateVillage(Village village);
 
+    /**
+     * 插入自然村信息
+     * @param village 自然村包装类
+     */
+    public void insertVillage(Village village);
+
 }

@@ -94,4 +94,29 @@ public class PovertyController {
             return "adminHome";
         }
     }
+
+    @RequestMapping("/toInsertPoverty")
+    public String toInsertPoverty(){
+        return "poverty/insertPoverty";
+    }
+
+    @RequestMapping("/insertPoverty")
+    public String insertPoverty(@Valid Poverty poverty,BindingResult bindingResult,ModelMap modelMap){
+        logger.info("待插入的贫困个人信息："+poverty.toString());
+        //假如出现错误
+        if(bindingResult.hasErrors()){
+            List<FieldError> list = bindingResult.getFieldErrors();
+            for(FieldError fieldError : list){
+                logger.info(fieldError.getField()+" : "+ fieldError.getDefaultMessage());
+                modelMap.addAttribute("ERR_"+fieldError.getField(),fieldError.getDefaultMessage());
+            }
+            return "poverty/insertPoverty";
+        }
+        Result result = povertyService.insertPoverty(poverty);
+        if(result.getResultStatus().code == 3){
+            return "poverty/insertPoverty";
+        }else{
+            return "redirect:toPoverty?pageNumber=1";
+        }
+    }
 }
